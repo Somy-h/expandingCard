@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    color: #fff;
+    margin: 0.5rem;
+    flex: 0.5;
+    display: flex;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+h3 {
+    display: none;
+}
+
+.panel.active h3{
+    display: block;
+    align-self: end;
+}
